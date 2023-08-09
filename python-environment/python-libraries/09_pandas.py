@@ -135,7 +135,7 @@ print(archive_csv.memory_usage(deep=True))
 print(archive_csv['Author'].value_counts())
 # elimina columnas duplicadas, se puede elegir cual mantener
 print(archive_csv.drop_duplicates(keep='last'))
-# ordena los valores
+# ordena los valores de manera descendente por columna 'Year'
 print(archive_csv.sort_values('Year', ascending=False))
 
 
